@@ -1,0 +1,15 @@
+tssa/pickled_algos/
+tssa/short_reviews/
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# pickle file too big
+*.pickle
+*.txt
