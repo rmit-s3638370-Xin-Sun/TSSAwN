@@ -12,10 +12,15 @@ import sentiment_mod as s
 
 # twitter streaming API
 # consumer key, consumer secret, access token, access secret.
-ckey = "7X1rnKvUWdF4vsymnrUz7T7oV"
-csecret = "0pYkPjlMp4TEkscT9zG7WTCSOMIviJSm33G7ft5CustQ7dqioH"
-atoken = "876330256885403648-edoX5eHKloSD2Y6uye6UADfex4V0zns"
-asecret = "bwuhKSpJbLHna1ScUsbMCerYJpRNcYXXn8kX8mV60CS6k"
+secret = []
+with open("secret.txt", "r") as f:
+    for line in f.readlines():
+        secret.append(line.strip())
+
+ckey = str(secret[0])
+csecret = str(secret[1])
+atoken = str(secret[2])
+asecret = str(secret[3])
 
 
 class TweetsListener(StreamListener):
