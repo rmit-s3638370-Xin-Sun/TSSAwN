@@ -13,3 +13,6 @@ tssa/short_reviews/
 # pickle file too big
 *.pickle
 *.txt
+
+
+*.idea/
